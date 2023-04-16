@@ -1,8 +1,10 @@
 function fibonacci(num) {
 // your code here
-	int fib = [0, 1];
+	if (num <= 1) {
+    return num;
+  }
 
-	return fibonacci(fib[0]-1)+fibonacci(fib[1]-2);
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 module.exports = fibonacci;
